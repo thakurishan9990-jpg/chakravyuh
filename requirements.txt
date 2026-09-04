@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+httpx
+pandas
+numpy
+networkx
+scikit-learn
+streamlit
+faker

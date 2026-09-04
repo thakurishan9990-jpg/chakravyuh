@@ -1,0 +1,6 @@
+# Skips the "Email:" onboarding prompt that otherwise blocks startup
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
