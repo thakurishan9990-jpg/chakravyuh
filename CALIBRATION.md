@@ -69,3 +69,23 @@ These were left as-is or already were assumptions — flagging them so nobody mi
 - `generator/generator.py` — amount bands/weights, P2M/P2P weights, scam deposit range, `normal_txns_per_day` default
 - `mock_api/app.py` — `/simulate` endpoint's `normal_txns_per_day` default (800 → 400, matching the generator default)
 - `dashboard/app.py` — UI defaults for the "Txns/day" inputs and the two hardcoded `simulate(14, 800, 3)` regenerate calls (800 → 400)
+
+## Documented SEBI enforcement cases
+
+Scheme parameters are anchored to real enforcement actions:
+
+| Case | Promised return | Scale |
+|---|---|---|
+| Trdez Investment (SEBI order, Apr 2026) | 10-12% monthly | Rs 2,950 cr mobilised |
+| Saradha Group | ~40% over <2 years | ~$3.5bn, 250k investors |
+| PACL | Fixed tenure returns | Rs 491bn, 58.5m customers |
+
+**Rate divergence, stated openly:** documented SEBI cases show *monthly*
+rates. App-based HYIP schemes advertise *daily* rates, which is what this
+generator models. Our assumption is therefore more aggressive than the
+prosecuted record. Stress testing validates detection at 2-3% payout
+ratios, below both.
+
+**Recruitment signal corroboration:** Saradha paid collection agents a
+fixed commission per new deposit, supporting the
+new-counterparties-per-day feature as a real-world signal.
