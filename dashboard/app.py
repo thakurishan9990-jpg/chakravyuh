@@ -18,7 +18,7 @@ from dashboard.theme import (                                # noqa: E402
     css, PALETTE, TIER_STYLE, VERDICT_STYLE, status_pill, risk_bar,
     big_score, vpa_label, verdict_badge)
 
-st.set_page_config(page_title="UPI Fraud Console", layout="wide",
+st.set_page_config(page_title="Chakravyuh", layout="wide",
                    initial_sidebar_state="collapsed")
 st.markdown(css(), unsafe_allow_html=True)
 
@@ -73,9 +73,9 @@ st.session_state.setdefault("threshold", 0.40)
 # --------------------------------------------------------------------------
 
 st.markdown(
-    f"<h1>UPI Fraud Console</h1>"
+    f"<h1>Chakravyuh</h1>"
     f"<p style=\"color:{PALETTE['text_dim']};font-size:0.88rem;margin-top:-4px;\">"
-    f"Ponzi &amp; high-yield scam detection on UPI transaction streams</p>",
+    f"UPI Ponzi &amp; high-yield scam detection &mdash; easy to enter, hard to escape</p>",
     unsafe_allow_html=True)
 
 try:

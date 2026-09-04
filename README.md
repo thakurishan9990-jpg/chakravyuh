@@ -1,7 +1,12 @@
-# UPI Ponzi scheme detector
+# Chakravyuh
 
-Detects "5-10% daily return" investment scams in UPI-style transaction
-streams. Built for the Razorpay Buildathon.
+**UPI Ponzi scheme detection for PSP integration.**
+
+In the Mahabharata, a *chakravyuh* is a spiral battle formation — easy to
+enter, nearly impossible to leave. A Ponzi scheme has the same shape: money
+flows inward from many victims, a trickle flows back out, and the structure
+holds until it collapses. This system detects that shape in UPI transaction
+streams and flags it for human review.
 
 ## Quick start
 
